@@ -1,0 +1,198 @@
+body {
+    font-family: 'Lato', sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #ffffff; /* Pure white background */
+    color: #333;
+}
+
+.hero-container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 20px;
+}
+
+.hero-image-wrapper,
+.header-container {
+    flex: 1; /* Ensures each takes up 50% of the space */
+    max-width: 50%;
+}
+
+.hero-image-wrapper {
+    display: none;
+}
+
+.hero-image {
+    display: none;
+}
+
+@media (min-width: 768px) {
+    .header-container {
+        max-width: 100%;
+    }
+
+    .hero-container {
+        justify-content: center; /* Center content on larger screens */
+    }
+
+    .hero-image-wrapper {
+        display: block;
+    }
+
+    .hero-image {
+        display: block;
+        margin-right: 20px;
+        width: 100%; /* Adjust as needed to fill its container */
+    }
+}
+
+.container {
+    width: 90%;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+header {
+    text-align: center;
+    padding: 2rem 0;
+}
+
+header img {
+    width: 300px;
+    height: auto;
+}
+
+header .header-container {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end; /* Right-align the header container */
+    padding: 0 20px; /* Add some padding to the sides */
+    margin: 0 auto;
+}
+
+header .header-container .main-title,
+header .header-container .main-subtitle,
+.app-store-button {
+    text-align: right; /* Right-align text */
+    margin-right: 50px; /* Add right margin */
+}
+
+header .main-title {
+    font-size: 48px;
+    font-weight: 300;
+    font-style: italic;
+    color: rgb(108, 108, 238);
+    margin: 1rem 0 0.5rem;
+}
+
+header .main-subtitle {
+    font-size: 29px;
+    font-weight: 300;
+    margin: 0 0 1.5rem;
+}
+
+header .app-store-button img {
+    width: 150px;
+    height: auto;
+}
+
+.feature-section {
+    display: flex;
+    flex-wrap: nowrap;
+    margin: 2rem 0;
+    align-items: center;
+    width: 100%;
+}
+
+.feature-image-wrapper,
+.feature-text {
+    flex: 1 1 50%; /* Each takes up 50% of the space */
+    padding: 1rem;
+}
+
+.feature-image-wrapper {
+    max-width: 50%;
+    margin: 0;
+}
+
+.feature-section img {
+    width: 100%;
+    max-width: 100%; /* Ensure image takes up full width of its container */
+    height: auto;
+}
+
+.feature-text {
+    max-width: 50%;
+    padding: 1rem;
+}
+
+.feature-text h2 {
+    font-size: 2rem;
+    margin-bottom: 0.5rem;
+    color: rgb(108, 108, 238);
+    font-weight: 400;
+}
+
+.feature-text p {
+    font-size: 1.25rem;
+    font-weight: 300;
+}
+
+footer {
+    text-align: center;
+    padding: 1rem 0;
+    font-size: 0.875rem;
+    background-color: #333;
+    color: #fff;
+}
+
+footer a {
+    color: #fff;
+    text-decoration: none;
+    margin: 0 0.5rem;
+}
+
+/* Media Queries */
+@media (max-width: 768px) {
+    .hero-image-wrapper,
+    .header-container {
+        max-width: 100%; /* Stack vertically on smaller screens */
+    }
+
+    header img {
+        width: 180px; /* Smaller logo */
+    }
+
+    header .header-container .main-title,
+    header .header-container .main-subtitle {
+        font-size: 24px;
+        margin-right: 30px; /* Smaller right margin */
+    }
+
+    .feature-section {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .feature-image-wrapper,
+    .feature-text {
+        flex: 1 1 100%;
+        text-align: center;
+        max-width: 100%;
+    }
+}
+
+@media (min-width: 769px) {
+    .feature-section {
+        flex-direction: row; /* Ensure image and text align horizontally */
+    }
+
+    .feature-section:nth-child(odd) {
+        flex-direction: row-reverse; /* Image right, text left */
+    }
+
+    .feature-text {
+        text-align: left;
+    }
+}
