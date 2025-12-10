@@ -1,0 +1,247 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>WrappedUp - Track Every Gift from Order to Wrap</title>
+    <meta name="description" content="Manage the chaos of gift-giving by tracking every present from order to wrap. Never lose track of your orders with WrappedUp.">
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, sans-serif;
+            line-height: 1.6;
+            color: #333;
+        }
+
+        .hero {
+            background: linear-gradient(135deg, #FFB380 0%, #F97C6C 100%);
+            color: white;
+            padding: 80px 20px;
+            text-align: center;
+        }
+
+        .hero h1 {
+            font-size: 3rem;
+            margin-bottom: 20px;
+            font-weight: 700;
+        }
+
+        .hero p {
+            font-size: 1.3rem;
+            margin-bottom: 30px;
+            opacity: 0.9;
+        }
+
+        .cta-button {
+            display: inline-block;
+            background: #F97C6C;
+            color: white;
+            padding: 15px 40px;
+            border-radius: 25px;
+            text-decoration: none;
+            font-weight: 600;
+            font-size: 1.1rem;
+            transition: transform 0.2s, box-shadow 0.2s;
+        }
+
+        .cta-button:hover {
+            transform: translateY(-2px);
+            box-shadow: 0 10px 20px rgba(249, 124, 108, 0.3);
+        }
+
+        .features {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 80px 20px;
+        }
+
+        .feature {
+            display: flex;
+            align-items: center;
+            margin-bottom: 100px;
+            gap: 60px;
+        }
+
+        .feature:nth-child(even) {
+            flex-direction: row-reverse;
+        }
+
+        .feature-content {
+            flex: 1;
+        }
+
+        .feature-content h2 {
+            font-size: 2.5rem;
+            margin-bottom: 20px;
+            color: #F97C6C;
+        }
+
+        .feature-content p {
+            font-size: 1.2rem;
+            color: #555;
+            line-height: 1.8;
+        }
+
+        .feature-image {
+            flex: 1;
+            text-align: center;
+        }
+
+        .feature-image img {
+            max-width: 300px;
+            height: auto;
+            border-radius: 20px;
+            box-shadow: 0 20px 60px rgba(0, 0, 0, 0.15);
+        }
+
+        .pricing {
+            background: #f8f9fa;
+            padding: 80px 20px;
+            text-align: center;
+        }
+
+        .pricing h2 {
+            font-size: 2.5rem;
+            margin-bottom: 40px;
+            color: #2c3e50;
+        }
+
+        .pricing-card {
+            max-width: 400px;
+            margin: 0 auto;
+            background: white;
+            padding: 40px;
+            border-radius: 20px;
+            box-shadow: 0 10px 40px rgba(0, 0, 0, 0.1);
+        }
+
+        .price {
+            font-size: 3rem;
+            font-weight: 700;
+            color: #007AFF;
+            margin: 20px 0;
+        }
+
+        .feature-list {
+            text-align: left;
+            margin: 30px 0;
+        }
+
+        .feature-list li {
+            margin: 15px 0;
+            font-size: 1.1rem;
+            display: flex;
+            align-items: center;
+        }
+
+        .feature-list li::before {
+            content: "✓";
+            color: #F97C6C;
+            font-weight: bold;
+            margin-right: 10px;
+            font-size: 1.3rem;
+        }
+
+        footer {
+            background: linear-gradient(135deg, #FFB380 0%, #F97C6C 100%);
+            color: white;
+            text-align: center;
+            padding: 30px 20px;
+        }
+
+        @media (max-width: 768px) {
+            .hero h1 {
+                font-size: 2rem;
+            }
+
+            .hero p {
+                font-size: 1.1rem;
+            }
+
+            .feature {
+                flex-direction: column !important;
+                gap: 30px;
+                margin-bottom: 60px;
+            }
+
+            .feature-content h2 {
+                font-size: 1.8rem;
+            }
+
+            .feature-content p {
+                font-size: 1rem;
+            }
+
+            .feature-image img {
+                max-width: 250px;
+            }
+        }
+    </style>
+</head>
+<body>
+    <section class="hero">
+        <h1>WrappedUp</h1>
+        <p>Manage the chaos of gift-giving by tracking every present from order to wrap</p>
+        <a href="https://apps.apple.com/app/id6756151758" class="cta-button">Download on the App Store</a>
+    </section>
+
+    <section class="features">
+        <div class="feature">
+            <div class="feature-content">
+                <h2>Never lose track of your orders</h2>
+                <p>Ordered gifts from multiple stores? Waiting on deliveries? Wrapped Up keeps everything organized so you know exactly what's arriving, what needs wrapping, and what's ready to give.</p>
+            </div>
+            <div class="feature-image">
+                <img src="1.png" alt="WrappedUp Summary Dashboard">
+            </div>
+        </div>
+
+        <div class="feature">
+            <div class="feature-content">
+                <h2>Track every step</h2>
+                <p>Mark each gift's status: Idea → Ordered → Received → Wrapped. Always know what's still in transit, what just arrived, and what's ready under the tree.</p>
+            </div>
+            <div class="feature-image">
+                <img src="2.png" alt="Gift Tracking Progress">
+            </div>
+        </div>
+
+        <div class="feature">
+            <div class="feature-content">
+                <h2>Add important details</h2>
+                <p>Track order numbers, delivery dates, store locations, or where you hid that wrapped present. Notes keep the crucial details at your fingertips.</p>
+            </div>
+            <div class="feature-image">
+                <img src="3.png" alt="Gift Details and History">
+            </div>
+        </div>
+
+        <div class="feature">
+            <div class="feature-content">
+                <h2>Manage gifts for everyone</h2>
+                <p>Create profiles for family, friends, and colleagues. See all their gifts at a glance and never wonder "did I already buy something for Mom?" Stay in control whether you're managing holiday shopping for a big family or just tracking a few birthday presents.</p>
+            </div>
+            <div class="feature-image">
+                <img src="1.png" alt="Manage Multiple People">
+            </div>
+        </div>
+    </section>
+
+    <section style="background: linear-gradient(135deg, #FFB380 0%, #F97C6C 100%); color: white; padding: 60px 20px; text-align: center;">
+        <div style="max-width: 800px; margin: 0 auto;">
+            <h2 style="font-size: 2.5rem; margin-bottom: 20px;">Unlock Unlimited Gift Tracking</h2>
+            <p style="font-size: 1.2rem; opacity: 0.9; margin-bottom: 30px;">Upgrade to Pro for unlimited people and gifts, detailed notes and links, and custom statuses to make the app truly yours.</p>
+            <img src="4.png" alt="WrappedUp Pro Features" style="max-width: 300px; border-radius: 20px; box-shadow: 0 20px 60px rgba(0, 0, 0, 0.3);">
+        </div>
+    </section>
+
+    <footer>
+        <p>&copy; 2025 Jason Ji. All rights reserved.</p>
+    </footer>
+</body>
+</html>
